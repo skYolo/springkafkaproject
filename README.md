@@ -1,20 +1,27 @@
 What are the differences between AngularJS (angular 1.x) and Angular (Angular 2.x and beyond)?
+
 Architecture
 Version 1.0 vs. Version 2.0 
 Angular 2.0 shows a substantial change in the structure as compared to version 1.0. The architecture of Angular v1 is based on MVC whereas the architecture of Angular v2 is based on service/controller. There is very less possibility to upgrade the Angular v1 to v2, mainly developers have to rewrite the entire application code. 
+
 Version 2.0 vs. Version 4.0 
 The upgrade of the version from 2.0 to 4.0 has reduced it’s bundled file size by 60%. The code generated is reduced and has accelerated the application development. Here the developed code can be used for prod mode and debug.  
 JavaScript and TypeScript 
+
 v 1.0 vs. v 2.0  
 Angular v1.0 use JavaScript to build the application while Angular v2.0 uses the Typescript to write the application. TypeScript is a superset of JavaScript which helps to build more robust and structured code. Dart can be used by developers along with TypeScript in version 2.0. 
+
 v 2.0 vs. v 4.0 
 Angular v4.0 is compatible with newer versions TypeScript 2.1 and TypeScript 2.2. This helps with better type checking and also enhanced IDE features for Visual Studio Code.  
+
 Mobile Support
 Angular 2.0 has made it possible to accomplish the native applications for a mobile platform like React Native. Angular 2.0 gives us the two layers: application layer and the rendering layer. As need, any view can be rendered in runtime for the required component. 
 Component-based UI 
+
 1.0 vs. 2.0 
 The controller concept which was present in Angular v1.0 is eliminated in Angular v2.0. Angular v2.0 has changed to component based UI. This helps a developer to divide the applications in terms of components with desired features and enable to call required UI. These have helped to improve the flexibility and reusability as compared to Angular v1.0 
 SEO Friendly
+
 1.0 vs. 2.0
 With Angular v1.0 developing the search engine friendly Single Page Applications was the major difficulty. But this bottleneck was eliminated in Angular v2.0. AngularJS development services build SEO friendly Single Page Applications by rendering the HTML at the server side.
 
