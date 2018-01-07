@@ -61,6 +61,7 @@ What are the lifecycle hooks for components and directives?
 Lifecycle hooks are simply functions that get called at specific points of a component’s life in our Angular apps. They landed in AngularJS 1.5 and are to be used alongside the .component() method, and have slowly evolved over the last few versions to include some more powerful (and Angular v2+ inspired) hooks. 
 
 constructor
+
 This is invoked when Angular creates a component or directive by calling new on the class.
 ngOnChanges
 Invoked every time there is a change in one of the input properties of the component.
@@ -72,15 +73,18 @@ ngOnDestroy
 This method will be invoked just before Angular destroys the component. Use this hook to unsubscribe observables and detach event handlers to avoid memory leaks.
 
 What are pipes? Give me an example.
+
 Pipes allow us to change data inside of a template; i.e. filtering, ordering, formatting dates, numbers, currencies, etc. A quick example is you can transfer a string to lowercase by applying a simple filter in the template code.
 Pipes are chaining, so you can use multiple combination of pipes. Example:
 <p>{{ cars | slice:0:2 | json }}</p>
 
 What are the differences between reactive forms and template driven forms?
+
 Template driven form is something when we write logic, validation, controls everything in the template part I mean in html code. The template is responsible for setting up the form, the validations etc
 Whereas In case of Reactive forms all the logic validation part in the controller side I mean in typescript file/class. For the reactive approach you are doing all that in code in the component. A far less noisy approach
 
 Template Driven Forms Features
+
 •	Easier to use
 •	Suitable for simple scenarios
 •	Uses Two-way data binding (using [(NgModel)] syntax)
@@ -89,6 +93,7 @@ Template Driven Forms Features
 •	Unit testing is challenge
 
 Reactive Forms Features
+
 •	Easier Unit testing
 •	More flexible, So Handles any complex scenarios.
 •	Reactive transformations can be made possible such as Adding elements dynamically
@@ -96,4 +101,5 @@ Reactive Forms Features
 •	More component code and less HTML markup
 
 What is a dumb, or presentation, component? What are the benefits of using dumb components?
+
 Presentational (aka Dumb) components are usually only responsible for displaying data based on their Inputs and communicating with their parent through Outputs. Therefore, they are much easier to test.
